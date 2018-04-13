@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Propietario">Herlich Steven Gonzalez Zambrano</string>
+    <string name="app_name">Androide EEGSA</string>
+    <string name="exit_message">Goodbye</string> 
+</resources>

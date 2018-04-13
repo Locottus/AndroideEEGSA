@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/MenuGPS"
+          android:title="GPS Posicion actual"/>
+    <item android:id="@+id/MenuBuscar"
+          android:title="Buscar poste" />
+    <item android:id="@+id/Menuxy"
+        android:title="Mostrar Coordenadas" />
+    <item android:id="@+id/MenuSalir"
+          android:title="Salir"
+       />
+</menu>

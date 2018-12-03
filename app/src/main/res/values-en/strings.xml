@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Androide 33GS@</string>
+    <string name="si">Yes</string>
+    <string name="no">No</string>
+    <string name="salir">Exit application?</string>
+    <string name="confirmar">Confirm operation</string>
+    <string name="cancelar">Cancel</string>
+    <string name="gpsOff">Gps off</string>
+    <string name="acepatar">Accept</string>
+    <string name="poste">Pole number</string>
+    <string name="cerrar">Close</string>
+    <string name="posicion">Current position (Longitude, Latitude)</string>
+    <string name="GpsOn">GPS On</string>
+    <string name="GpsOff">GPS Off</string>
+    <string name="sCoordinates">Show Current Coordinates</string>
+    <string name="mSalir">Exit</string>
+    <string name="mPosActual">GPS Current Position</string>
+    <string name="mnPoste">Find Pole</string>
+    <string name="mRastreador">GPS Tracker on/off</string>
+    <string name="noEncontrado">Pole not found</string>
+    <string name="buscando">Searching, please wait.</string>
+    <string name="gMaps">Go to Google Maps</string>
+</resources>

@@ -2,7 +2,6 @@ package androide.herlich.your.androideeegsa;
 
 import android.location.Location;
 import android.os.Bundle;
-import android.util.Log;
 
 /**
  * Created by Herlich on 8/26/2017.

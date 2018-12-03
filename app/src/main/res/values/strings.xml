@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">Androide 3365@</string>
+    <string name="app_name">Androide 33GS@</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="salir">Salir de Aplicacion?</string>
+    <string name="confirmar">Confirmar Operacion</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="gpsOff">Rastreador GPS apagado</string>
+    <string name="acepatar">Aceptar</string>
+    <string name="poste">Numero de Poste </string>
+    <string name="cerrar">Cerrar</string>
+    <string name="posicion">Coordenadas actuales (Longitud,Latitud)</string>
+    <string name="GpsOn">Rastreador GPS encendido.</string>
+    <string name="GpsOff">Rastreador GPS apagado.</string>
+    <string name="mPosActual">GPS Posicion Actual</string>
+    <string name="mnPoste">Buscar Poste</string>
+    <string name="sCoordinates">Mostrar Coordenadas</string>
+    <string name="mSalir">Salir</string>
+    <string name="mRastreador">Rastreador GPS on/off</string>
+    <string name="noEncontrado">Poste no encontrado</string>
+    <string name="buscando">Buscando, espere un momento.</string>
+    <string name="gMaps">Ir a Google Maps</string>
 </resources>

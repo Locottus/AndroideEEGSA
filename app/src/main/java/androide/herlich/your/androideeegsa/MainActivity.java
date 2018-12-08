@@ -57,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
     String Latitud = null;
     int MapID = 0;
 
+    boolean goGoogleMaps;
+
     public static boolean hasPermissions(Context context, String... permissions) {
         if (context != null && permissions != null) {
             for (String permission : permissions) {
@@ -217,14 +219,16 @@ public class MainActivity extends AppCompatActivity {
                 SalirGis();
                 return true;
             case R.id.MenuBuscar:
+                goGoogleMaps = false;
                 buscarPoste();
                 return true;
             case R.id.Menuxy:
                 mostrarXY();
                 return true;
-            /*case R.id.MenuGMaps:
-                googleMaps();
-                return true;*/
+            case R.id.MenuGM:
+                goGoogleMaps = true;
+                buscarPoste();
+                return true;
 
             default:
                 return super.onOptionsItemSelected(item);
@@ -232,19 +236,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //demo function for another release.
-    private void googleMaps() {
+    private void googleMaps(String x, String y) {
         try {
             //https://developers.google.com/maps/documentation/urls/android-intents
-            //-90.5473612,14.51742544 --> van alrevez las coordenadas
-            Uri gmmIntentUri = Uri.parse("geo:14.51742544,-90.5473612");
+            //-90.5473612,14.51742544 --> van latitud, longitud PosteLabel
+            /*Uri gmmIntentUri = Uri.parse("geo:" + y + "," + x + "(" + PosteLabel + ")");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
             startActivity(mapIntent);
 
             if (mapIntent.resolveActivity(getPackageManager()) != null) {
-                startActivity(mapIntent);
-            }
-
+                startActivity(mapIntent);*/
+            Uri.Builder builder = new Uri.Builder();
+            builder.scheme("https")
+                    .authority("www.google.com").appendPath("maps").appendPath("dir").appendPath("").appendQueryParameter("api", "1")
+                    .appendQueryParameter("destination", y + "," + x);
+            String url = builder.build().toString();
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
         } catch (Exception ex) {
             System.out.print(ex.getMessage());
         }
@@ -290,7 +300,6 @@ public class MainActivity extends AppCompatActivity {
                     refresher = false;
                     ToastMSG(getString(R.string.GpsOff));
                     MapID = mMapView.getSpatialReference().getID();
-
                     buscaThread();
                 }
             }
@@ -333,6 +342,9 @@ public class MainActivity extends AppCompatActivity {
             mPostes.addGraphic(new Graphic(mapPoint, new SimpleMarkerSymbol(Color.BLUE, 20, SimpleMarkerSymbol.STYLE.DIAMOND)));
             mMapView.zoomToScale(mapPoint, 1904.357886);
             mMapView.centerAt(mapPoint, true);
+
+            if (goGoogleMaps)
+                googleMaps(x, y);
 
         } catch (Exception ex) {
             System.out.println(ex.getMessage());

@@ -20,5 +20,5 @@
     <string name="mRastreador">GPS Tracker on/off</string>
     <string name="noEncontrado">Pole not found</string>
     <string name="buscando">Searching, please wait.</string>
-    <string name="gMaps">Go to Google Maps</string>
+    <string name="gMaps">Route to Pole GoogleMaps </string>
 </resources>

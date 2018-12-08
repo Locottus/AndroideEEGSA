@@ -9,11 +9,11 @@
     <item
         android:id="@+id/Menuxy"
         android:title="@string/mPosActual" />
-    <!--
-        <item
-            android:id="@+id/MenuGMaps"
-            android:title="@string/gMaps" />
-    -->
+
+    <item
+        android:id="@+id/MenuGM"
+        android:title="@string/gMaps" />
+
     <item
         android:id="@+id/MenuSalir"
         android:title="@string/salir" />

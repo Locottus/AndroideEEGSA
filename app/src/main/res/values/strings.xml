@@ -19,5 +19,5 @@
     <string name="mRastreador">Rastreador GPS on/off</string>
     <string name="noEncontrado">Poste no encontrado</string>
     <string name="buscando">Buscando, espere un momento.</string>
-    <string name="gMaps">Ir a Google Maps</string>
+    <string name="gMaps">Ruta para Poste GoogleMaps</string>
 </resources>

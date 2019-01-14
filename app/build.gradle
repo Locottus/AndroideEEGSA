@@ -7,8 +7,9 @@ android {
         applicationId 'your.herlich.Androide'
         minSdkVersion 19
         targetSdkVersion 28
-        versionName '12.5'
+        versionName '13'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        versionCode 13
     }
     packagingOptions {
         exclude 'META-INF/LGPL2.1'

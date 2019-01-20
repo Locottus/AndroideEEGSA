@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
             milocManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, milocListener);
     }
 
-    private poste fGetPole(String nPoste) {
+    public poste fGetPole(String nPoste) {
         BufferedReader reader = null;
         poste p = new poste();
         p.setY("0");

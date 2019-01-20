@@ -20,6 +20,26 @@ public class MainActivityTest {
         assertEquals(p.getPoste(),"272135");
     }
 
+
+    @Test
+    public void checkX(){
+        MainActivity m = new MainActivity();
+        poste p = new poste();
+        p = m.fGetPole("272135");
+        assertEquals(p.getX(),"-90.59012594");
+    }
+
+
+
+    @Test
+    public void checkY(){
+        MainActivity m = new MainActivity();
+        poste p = new poste();
+        p = m.fGetPole("272135");
+        assertEquals(p.getY(),"14.48396236");
+    }
+
+
     @After
     public void tearDown() throws Exception {
     }
